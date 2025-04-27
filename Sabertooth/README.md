@@ -6,6 +6,10 @@
 
 ---
 
+Visão Geral do Projeto
+
+O Gorillas 3D é um jogo baseado em OpenGL onde dois jogadores alternam turnos lançando projéteis, ajustando ângulo e força para acertar o oponente, evitando prédios no cenário. O fluxo do programa inicia no main.cpp, que configura a janela OpenGL, shaders, geometrias e texturas, processa entradas do usuário e renderiza a cena. A lógica do jogo está em Game.h/cpp, calculando a trajetória do projétil com equações balísticas baseadas em ângulo, força e gravidade. Uma câmera ortográfica fixa e transformações de modelo (translação e escala) posicionam cubos texturizados (jogadores e prédios) e esferas coloridas (projétil e explosão). Colisões são detectadas usando caixas delimitadoras 2D alinhadas aos eixos, verificando impactos com prédios ou o oponente. O design modular separa renderização (Shader), geração de geometria (Geometry) e lógica do jogo (Game), utilizando structs para simplicidade e uma classe Shader para renderização eficiente.
+
 ## Sumário Completo
 
 1. [Fluxo de Execução da Aplicação](#fluxo-de-execução-da-aplicação)
