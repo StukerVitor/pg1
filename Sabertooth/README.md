@@ -95,7 +95,7 @@ O laço permanece ativo até que o usuário pressione **Escape** ou feche a jane
 | `createShader()`                            | Declara **vertex shader** e **fragment shader** como literais de sequência _raw_ (`R"(`) para evitar arquivos externos, agilizando testes em laboratório.  |
 | `processInput(GLFWwindow*, dt)`             | Gerencia todas as teclas de controle, limitando faixa de movimento e valores de força e ângulo com `clampf`.                                               |
 | Blocos `drawQuad`, `drawCube`, `drawSphere` | Funções ponte para aplicar `model matrix` específica antes de renderizar cada entidade.                                                                    |
-| Laço principal                              | Sequência: entrada → atualização → limpeza de buffers → desenho → `glfwSwapBuffers` e `glfwPollEvents`.                                                    |
+| Laço principal                              | Sequência: entrada --> atualização --> limpeza de buffers --> desenho --> `glfwSwapBuffers` e `glfwPollEvents`.                                            |
 
 ---
 
