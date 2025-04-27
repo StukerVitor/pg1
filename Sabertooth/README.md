@@ -28,7 +28,7 @@ O Gorillas 3D é um jogo baseado em OpenGL onde dois jogadores alternam turnos l
 
 ```mermaid
 graph TD
-    Start([Início do programa]) --> InitWindow[createWindow()] --> InitGL[createShader() → buildGeometry() → loadAllTextures()]
+    Start([Início do programa]) --> InitWindow[createWindow()] --> InitGL[createShader() --> buildGeometry() --> loadAllTextures()]
     InitGL --> GameInit[initGame() – posiciona jogadores e prédios]
     GameInit --> Loop{Laço principal}
     Loop --> Input[processInput() – lê teclado]
